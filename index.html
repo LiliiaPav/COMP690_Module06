@@ -16,8 +16,30 @@
 </head>
 <body class="m-4">
     <h1>Employee Management System</h1>
-    <form id="empForm">
-     
+    <form id="empForm" class="bg-secondary bg-opacity-25 border border-warning ">
+        <label class="form-label">8-Digit Employee ID </label><br>
+        <input type="text" required id="id" maxlength="8" ><br>
+        <label class="form-label">Full Name</label><br>
+        <input type="text"  required id="name"> <br>
+        <label>4-Digit Extension</label><br>
+        <input type="text" id="ext" maxlength="4" required><br>
+        <label class="form-label">Email</label><br>
+        <input type="email" id="email" required><br>
+        <label class="form-label">Department</label><br>
+        <select id="department" size="1" >
+            <option value="administrative">Administrative</option>
+            <option value="engineering">Engineering</option>
+            <option value="executive">Executive</option>
+            <option value="marketing">Marketing</option>
+            <option value="qa">Quality Assurance</option>
+            <option value="sales">Sales</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary me-md-2" >Add Employee</button>
+
     </form>
 </body>
 </html>
+
+
